@@ -144,10 +144,21 @@ uvicorn app.main:app --reload
 
 ## 🌐 Acesso à Aplicação
 
-- **Interface Web:** http://127.0.0.1:8000
-- **Documentação da API (Swagger):** http://127.0.0.1:8000/docs
+### 🔹 Ambiente Online (Deploy)
+
+A aplicação está **deployada em ambiente de nuvem** e disponível para acesso público no link abaixo:
+
+🔗 **https://email-triage-ai.onrender.com**
+
+> A versão online utiliza o modo **Mock AI**, permitindo a avaliação completa da solução
+> sem dependência de créditos externos de API.
 
 ---
+
+### 🔹 Ambiente Local (Desenvolvimento)
+
+- **Interface Web:** http://127.0.0.1:8000
+- **Documentação da API (Swagger):** http://127.0.0.1:8000/docs
 
 ## 🧪 Exemplo de Uso
 
