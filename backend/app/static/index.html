@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de E-mails com IA</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="glass-card">
+           
+            <div class="header">
+                 <div class="logo-container">
+                    <img src="/static/logo-autou.webp" alt="AutoU Logo" class="header-logo">
+                </div>
+                <h1>Classificador de E-mails com IA </h1>
+                <p>Automatize o fluxo de trabalho da sua caixa de entrada com classificação inteligente</p>
+                
+                <!-- NOVO: Contador de Análises -->
+                <div class="stats-badge">
+                    <span style="font-size: 0.85rem; color: #121213;"> E-mails analisados:</span>
+                    <span id="statsCounter" style="font-size: 1.2rem; font-weight: 700; color: lab(73.87% 13.18 72.5); margin-left: 0.5rem;">0</span>
+                </div>
+            </div>
+
+            <div class="upload-area" id="dropZone">
+                <input type="file" id="fileInput" accept=".txt,.pdf">
+                <div class="upload-icon">✉️</div>
+                <div class="upload-text">
+                    <h3>Faça upload do arquivo de e-mail</h3>
+                     <p>ou clique para selecionar • Suporta .txt e .pdf (máx. 10 MB)</p>
+                   
+                </div>
+            </div>
+
+            <button id="analyzeBtn" class="btn-analyze" disabled>Analisar o arquivo do e-mail</button>
+
+            <!-- Loader -->
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: #cbd5e1;">Analisando conteúdo...</p>
+            </div>
+
+            <!-- NOVO: Error Alert -->
+            <div class="error-alert" id="errorAlert">
+                <div id="errorMessage"></div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="result-section" id="resultSection">
+                <div style="text-align: center;">
+                    <div id="classificationBadge" class="classification-badge">
+                        <span id="classificationText">Produtivo</span>
+                    </div>
+                </div>
+
+                <h3 style="margin-bottom: 0.5rem; color: #fff;">Resposta sugerida:</h3>
+                <div class="response-box" id="responseText">
+                    <!-- Typing effect output here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- NOVO: Footer com Info -->
+        <div class="footer-info">
+            <p>💡 Dica: clique duas vezes no contador para reiniciar as estatísticas</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
