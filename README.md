@@ -15,6 +15,7 @@ Automatizar o processo de triagem de e-mails, classificando-os em categorias pr�
 ## 🧠 Funcionalidades
 
 - 📂 Upload de e-mails nos formatos **.txt** e **.pdf**
+- 📝 **Inserção direta do texto do e-mail** via interface web
 - 🧾 Extração automática do texto dos arquivos
 - 🧹 Pré-processamento de texto (NLP básico)
 - 🤖 Classificação automática do e-mail em:
@@ -23,6 +24,7 @@ Automatizar o processo de triagem de e-mails, classificando-os em categorias pr�
 - ✍️ Geração de **resposta automática sugerida**
 - 🌐 Interface web moderna, intuitiva e responsiva
 - 🧪 **Modo Mock AI** para testes e demonstração sem custo de API
+- ☁️ Aplicação **deployada em nuvem** com acesso público
 
 ---
 
@@ -30,9 +32,11 @@ Automatizar o processo de triagem de e-mails, classificando-os em categorias pr�
 
 A aplicação disponibiliza uma interface web simples e amigável, permitindo:
 
-- Arrastar e soltar arquivos de e-mail
-- Visualizar a classificação atribuída ao conteúdo
-- Visualizar a resposta automática sugerida pela IA
+- Upload de arquivos de e-mail (**.txt** ou **.pdf**)
+- Inserção direta do texto do e-mail (sem necessidade de arquivo)
+- Visualização clara da classificação atribuída
+- Exibição da resposta automática sugerida pela IA
+- Feedback visual de carregamento e erros
 
 ### Tecnologias do Frontend
 
@@ -163,7 +167,11 @@ A aplicação está **deployada em ambiente de nuvem** e disponível para acesso
 ## 🧪 Exemplo de Uso
 
 1. Acesse a interface web
-2. Faça upload de um arquivo `.txt` ou `.pdf`
+2. Escolha uma das opções:
+
+- Upload de arquivo .txt ou .pdf
+- Colar diretamente o texto do e-mail
+
 3. Clique em **Analisar e-mail**
 4. Visualize:
    - Categoria do e-mail (Produtivo / Improdutivo)
@@ -174,6 +182,7 @@ A aplicação está **deployada em ambiente de nuvem** e disponível para acesso
 ## 📝 Observações Técnicas
 
 - Projeto organizado com **separação clara de responsabilidades**
+- Backend preparado para extensão e escalabilidade
 - Uso de **fallback automático (Mock AI)** em caso de falha ou ausência da API
 - Estrutura pensada para **facilidade de manutenção e escalabilidade**
 - Código limpo, modular e documentado
